@@ -1,0 +1,23 @@
+.title{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.description{
+    text-align: center;
+    color:  red;
+}
+
+a{
+    display : block;
+    margin: 10px 0;
+    color: aliceblue;
+    background-color: black;
+    padding: 8px 10px;
+    width: fit-content ;
+    text-decoration: none;
+    float: right;
+}
+
+.title{
+    
+}
