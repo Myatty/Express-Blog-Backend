@@ -18,6 +18,26 @@ a{
     float: right;
 }
 
-.title{
-    
+label{
+    display:block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input{
+    font-size: 18px;
+    padding: 4px 10px;
+}
+
+button{
+    margin: 10px 0;
+    color: aliceblue;
+    background-color: black;
+    padding: 8px 0;
+    width: 100%  ;
+}
+
+.mx-auto{
+    width: 40%;
+    margin: auto auto;
 }

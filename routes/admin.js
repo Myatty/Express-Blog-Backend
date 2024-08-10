@@ -3,13 +3,21 @@ const path = require("path");
 
 const router = express.Router();
 
+const posts = [];
+
 router.get("/create", (req, res) => {
     res.sendFile(path.join(__dirname, ".." , "views" , "addPost.html"))
 })
 
 router.post("/", (req, res) => {
     const {title, description} = req.body;
-    res.redirect("/")
+    console.log(`Title value is ${title} & description is ${description}`);
+    posts.push({
+        title, description
+    })
+    console.log(posts);
+    
+    res.redirect("/"); 
     })
 
-module.exports = router
+module.exports = {adminRoutes :router, posts}
