@@ -7,8 +7,9 @@ const router = express.Router();
 
 router.get("/", (req,res) => {
     console.log( posts);
+    res.render("home", {title: "Home Page", postArr: posts});
     
-    res.sendFile(path.join(__dirname, "..", "views", "homePage.html"))
+    // res.sendFile(path.join(__dirname, "..", "views", "homePage.html"))
     //Express/views/homePage.html
 })
 

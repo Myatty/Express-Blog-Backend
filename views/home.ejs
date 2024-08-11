@@ -1,0 +1,29 @@
+<%- include("./includes/head") %>
+
+    <h1 class="title">You are at the HOME PAGE</h1>
+    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore aut veritatis temporibus,
+        reprehenderit mollitia
+        reiciendis illum eius sit dolor minima qui architecto iste voluptas voluptatum, neque, corrupti nostrum quam.
+        Corporis!</p>
+
+    <a href="/admin/create">Add Post Here</a>
+    <hr>
+    <h1 class="title">Posts</h1>
+
+    <% if(postArr.length === 0) { %>
+        <div>
+            <h4>There is no Posts now</h4>
+            <a href="/admin/create">Create a new Post now!</a>
+        </div>
+
+    <% } %>
+
+    <% for(let post of postArr) { %>
+
+    <div class="post-box">
+        <p class="post-title"><%= post.title %></p>
+        <p class="post-description"><%= post.description %></p>
+        
+    </div>
+    <% } %>
+    <%- include("./includes/foot") %>
