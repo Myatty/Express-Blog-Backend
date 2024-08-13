@@ -5,7 +5,7 @@ This is a simple blog application built using Express.js and EJS for templating.
 ### Add Posts: Users can create new blog posts.
 ### View Posts: Users can view all the blog posts.
 ### Technologies Used
-#### Express.js: Web framework for Node.js.
+#### Express.js: Web framework for Node.js
 #### EJS: Embedded JavaScript templating.
 #### Nodemon: Utility that monitors for any changes in your source and automatically restarts your server.
 
